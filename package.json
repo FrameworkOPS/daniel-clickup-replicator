@@ -1,0 +1,21 @@
+{
+  "name": "daniel-clickup-replicator",
+  "version": "0.1.0",
+  "description": "Webhook-driven ClickUp client onboarding: replicates a predefined folder/list/task template under a new client folder whenever a form is submitted.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}

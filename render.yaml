@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: daniel-clickup-replicator
+    env: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: CLICKUP_API_TOKEN
+        sync: false
+      - key: CLICKUP_SPACE_ID
+        sync: false
+      - key: WEBHOOK_SECRET
+        sync: false
+      - key: FORM_VENDOR
+        value: typeform
+      - key: CLIENT_NAME_FIELD
+        value: client_name

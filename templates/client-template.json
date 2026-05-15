@@ -1,0 +1,30 @@
+{
+  "_comment": "DANIEL — replace this with your exact ClickUp layout. The replicator creates a new Folder under CLICKUP_SPACE_ID, named after the incoming client, then creates each list below inside that folder, then creates each task inside the matching list. Statuses, custom fields, automations, and views are NOT copied via API — set those on a ClickUp Folder Template inside ClickUp itself and (optionally) reference its template_id below to have ClickUp apply it after creation.",
+  "folder_template_id": null,
+  "lists": [
+    {
+      "name": "Onboarding",
+      "content": "Kickoff checklist for the new client",
+      "tasks": [
+        { "name": "Send welcome email", "description": "Use the standard welcome template.", "priority": 2 },
+        { "name": "Schedule kickoff call", "description": "Within 5 business days of signup.", "priority": 2 },
+        { "name": "Collect access credentials", "description": "CRM, accounting, ad accounts, phone system.", "priority": 1 }
+      ]
+    },
+    {
+      "name": "Operations Audit",
+      "tasks": [
+        { "name": "Map current intake-to-invoice process" },
+        { "name": "Identify top 3 bottlenecks" },
+        { "name": "Draft recommendations doc" }
+      ]
+    },
+    {
+      "name": "Weekly Cadence",
+      "tasks": [
+        { "name": "Weekly status report" },
+        { "name": "Weekly leadership sync" }
+      ]
+    }
+  ]
+}
